@@ -41,14 +41,14 @@ class _UserScreenState extends State<UserScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('API'),
+        title: const Text('API'),
         centerTitle: true,
       ),
       body: ListView.builder(
         itemCount: user.length,
         itemBuilder: (context, index) => ListTile(
           title: Text(user[index].firstname),
-          subtitle: Text('userexpl@outlook.com'),
+          subtitle: const Text('userexpl@outlook.com'),
         ),
       ),
     );

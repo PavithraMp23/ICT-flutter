@@ -14,7 +14,7 @@ class IndexScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text(
+          title: const Text(
             'Navigation',
             style: TextStyle(fontSize: 20),
           ),
@@ -25,7 +25,7 @@ class IndexScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               ElevatedButton(
-                  style: ButtonStyle(
+                  style: const ButtonStyle(
                       backgroundColor: WidgetStatePropertyAll(
                           Color.fromARGB(255, 242, 111, 216))),
                   onPressed: () {
@@ -35,9 +35,9 @@ class IndexScreen extends StatelessWidget {
                           builder: (context) => const HomeScreen(),
                         )); //navigation cheyan vendi.Ram-il pushing nadakum.
                   },
-                  child: Text('Screen 1')),
+                  child: const Text('Screen 1')),
               ElevatedButton(
-                  style: ButtonStyle(
+                  style: const ButtonStyle(
                       backgroundColor: WidgetStatePropertyAll(
                           Color.fromARGB(255, 250, 208, 131))),
                   onPressed: () {
@@ -46,9 +46,9 @@ class IndexScreen extends StatelessWidget {
                         MaterialPageRoute(
                             builder: (context) => const HomeScreen2()));
                   },
-                  child: Text('Screen 2')),
+                  child: const Text('Screen 2')),
               ElevatedButton(
-                  style: ButtonStyle(
+                  style: const ButtonStyle(
                       backgroundColor: WidgetStatePropertyAll(
                           Color.fromARGB(255, 111, 233, 242))),
                   onPressed: () {
@@ -57,55 +57,55 @@ class IndexScreen extends StatelessWidget {
                         MaterialPageRoute(
                             builder: (context) => const HomeScreen3()));
                   },
-                  child: Text('Screen 3')),
+                  child: const Text('Screen 3')),
               ElevatedButton(
-                  style: ButtonStyle(
+                  style: const ButtonStyle(
                       backgroundColor: WidgetStatePropertyAll(
                           Color.fromARGB(255, 111, 242, 163))),
                   onPressed: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => HomeScreen4(),
+                          builder: (context) => const HomeScreen4(),
                         ));
                   },
-                  child: Text('Screen 4')),
+                  child: const Text('Screen 4')),
               ElevatedButton(
-                  style: ButtonStyle(
+                  style: const ButtonStyle(
                       backgroundColor: WidgetStatePropertyAll(
                           Color.fromARGB(255, 148, 111, 242))),
                   onPressed: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => HomeScreen5(),
+                          builder: (context) => const HomeScreen5(),
                         ));
                   },
-                  child: Text('Screen 5')),
+                  child: const Text('Screen 5')),
               ElevatedButton(
-                  style: ButtonStyle(
+                  style: const ButtonStyle(
                       backgroundColor: WidgetStatePropertyAll(
                           Color.fromARGB(255, 242, 120, 111))),
                   onPressed: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => HomeScreen6(),
+                          builder: (context) => const HomeScreen6(),
                         ));
                   },
-                  child: Text('Screen 6')),
+                  child: const Text('Screen 6')),
               ElevatedButton(
-                  style: ButtonStyle(
+                  style: const ButtonStyle(
                       backgroundColor: WidgetStatePropertyAll(
                           Color.fromARGB(255, 201, 242, 111))),
                   onPressed: () {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => FirstScreen(),
+                          builder: (context) => const FirstScreen(),
                         ));
                   },
-                  child: Text('Screen 7'))
+                  child: const Text('Screen 7'))
             ],
           ),
         ));

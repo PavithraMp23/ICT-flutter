@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Image(
+        title: const Image(
             height: 150,
             width: 150,
             image: NetworkImage(
@@ -18,18 +18,19 @@ class HomeScreen extends StatelessWidget {
         actions: [
           IconButton(
               onPressed: () {},
-              icon: Icon(color: Colors.black, Icons.add_box_outlined)),
+              icon: const Icon(color: Colors.black, Icons.add_box_outlined)),
           IconButton(
               onPressed: () {},
-              icon: Icon(color: Colors.black, Icons.favorite_border_outlined)),
+              icon: const Icon(
+                  color: Colors.black, Icons.favorite_border_outlined)),
           IconButton(
               onPressed: () {},
-              icon: Icon(color: Colors.black, Icons.message_outlined)),
+              icon: const Icon(color: Colors.black, Icons.message_outlined)),
         ],
       ),
       body: Column(
         children: [
-          Divider(thickness: 1.0, color: Colors.black12),
+          const Divider(thickness: 1.0, color: Colors.black12),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Row(
@@ -67,7 +68,7 @@ class HomeScreen extends StatelessWidget {
               ],
             ),
           ),
-          Divider(thickness: 1.0, color: Colors.black12),
+          const Divider(thickness: 1.0, color: Colors.black12),
           /*Column(
             children: [
               ListTile(
@@ -101,7 +102,7 @@ class HomeScreen extends StatelessWidget {
             ],
           )*/
           Expanded(
-            child: ListView(children: [
+            child: ListView(children: const [
               PostWidget(
                 imageUrl:
                     'https://photosbulk.com/wp-content/uploads/instagram-profile-picture-black-and-white_32.webp',
@@ -120,15 +121,18 @@ class HomeScreen extends StatelessWidget {
           )
         ],
       ),
-      bottomNavigationBar:
-          BottomNavigationBar(type: BottomNavigationBarType.fixed, items: [
-        BottomNavigationBarItem(label: '', icon: Icon(Icons.home)),
-        BottomNavigationBarItem(label: '', icon: Icon(Icons.search)),
-        BottomNavigationBarItem(label: '', icon: Icon(Icons.add_box_outlined)),
-        BottomNavigationBarItem(
-            label: '', icon: Icon(Icons.movie_creation_outlined)),
-        BottomNavigationBarItem(label: '', icon: Icon(Icons.person_2_outlined)),
-      ]),
+      bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          items: const [
+            BottomNavigationBarItem(label: '', icon: Icon(Icons.home)),
+            BottomNavigationBarItem(label: '', icon: Icon(Icons.search)),
+            BottomNavigationBarItem(
+                label: '', icon: Icon(Icons.add_box_outlined)),
+            BottomNavigationBarItem(
+                label: '', icon: Icon(Icons.movie_creation_outlined)),
+            BottomNavigationBarItem(
+                label: '', icon: Icon(Icons.person_2_outlined)),
+          ]),
     );
   }
 }

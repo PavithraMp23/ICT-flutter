@@ -16,12 +16,12 @@ class PostWidget extends StatelessWidget {
     return Container(
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         ListTile(
-          contentPadding: EdgeInsets.all(1),
+          contentPadding: const EdgeInsets.all(1),
           title: Text(userName),
           leading: CircleAvatar(
             backgroundImage: NetworkImage(imageUrl),
           ),
-          trailing: Icon(Icons.more_vert),
+          trailing: const Icon(Icons.more_vert),
         ),
         Container(
           color: Colors.black,
@@ -31,30 +31,32 @@ class PostWidget extends StatelessWidget {
         ),
         Row(
           children: [
-            IconButton(onPressed: () {}, icon: Icon(Icons.favorite_outline)),
-            IconButton(onPressed: () {}, icon: Icon(Icons.chat_bubble_outline)),
-            IconButton(onPressed: () {}, icon: Icon(Icons.send)),
-            SizedBox(
+            IconButton(
+                onPressed: () {}, icon: const Icon(Icons.favorite_outline)),
+            IconButton(
+                onPressed: () {}, icon: const Icon(Icons.chat_bubble_outline)),
+            IconButton(onPressed: () {}, icon: const Icon(Icons.send)),
+            const SizedBox(
               width: 210,
             ),
-            IconButton(onPressed: () {}, icon: Icon(Icons.save_alt)),
+            IconButton(onPressed: () {}, icon: const Icon(Icons.save_alt)),
           ],
         ),
-        Text(
+        const Text(
           '109999 Likes',
           style: TextStyle(fontWeight: FontWeight.w500),
         ),
-        Text(
+        const Text(
           '@username1 Cogito ergo sum!?',
           style: TextStyle(fontWeight: FontWeight.w500),
         ),
-        Text(
+        const Text(
           '#jeevitham #oru #train #anu',
           style: TextStyle(
-              color: const Color.fromARGB(255, 16, 116, 216),
+              color: Color.fromARGB(255, 16, 116, 216),
               fontWeight: FontWeight.w500),
         ),
-        SizedBox(
+        const SizedBox(
           height: 15,
         )
       ]),

@@ -13,14 +13,14 @@ class LoginScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Padding(
-                padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+              const Padding(
+                padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
                 child: Image(
                     /*Container kond=> child: image.nework*/
                     height: 80,
                     image: AssetImage('images/Instagram_logo.svg.png')),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 12,
               ),
               SizedBox(
@@ -28,8 +28,8 @@ class LoginScreen extends StatelessWidget {
                 child: TextField(
                   decoration: InputDecoration(
                       filled: true,
-                      fillColor: Color(0xffE8E8E8),
-                      contentPadding: EdgeInsets.all(10.0),
+                      fillColor: const Color(0xffE8E8E8),
+                      contentPadding: const EdgeInsets.all(10.0),
                       enabledBorder: OutlineInputBorder(
                         //verum border upyogicha, default state aarikum apply akune
                         borderRadius: BorderRadius.circular(6.0),
@@ -48,11 +48,11 @@ class LoginScreen extends StatelessWidget {
                         ),
                       ),
                       hintText: 'Phone number, username or email address',
-                      hintStyle:
-                          TextStyle(fontWeight: FontWeight.w100, fontSize: 15)),
+                      hintStyle: const TextStyle(
+                          fontWeight: FontWeight.w100, fontSize: 15)),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 10,
               ),
               SizedBox(
@@ -61,8 +61,8 @@ class LoginScreen extends StatelessWidget {
                   obscureText: true,
                   decoration: InputDecoration(
                       filled: true,
-                      fillColor: Color(0xffE8E8E8),
-                      contentPadding: EdgeInsets.all(10.0),
+                      fillColor: const Color(0xffE8E8E8),
+                      contentPadding: const EdgeInsets.all(10.0),
                       enabledBorder: OutlineInputBorder(
                         //verum border upyogicha, default state aarikum apply akune
                         borderRadius: BorderRadius.circular(6.0),
@@ -81,14 +81,14 @@ class LoginScreen extends StatelessWidget {
                         ),
                       ),
                       hintText: 'Password',
-                      hintStyle:
-                          TextStyle(fontWeight: FontWeight.w100, fontSize: 15)),
+                      hintStyle: const TextStyle(
+                          fontWeight: FontWeight.w100, fontSize: 15)),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 25,
               ),
-              Container(
+              SizedBox(
                 height: 40,
                 width: 800,
                 child: ElevatedButton(
@@ -106,10 +106,10 @@ class LoginScreen extends StatelessWidget {
                             builder: (context) => const HomeScreen(),
                           ));
                     },
-                    child: Text('login')),
+                    child: const Text('login')),
               ),
-              SizedBox(height: 10),
-              Row(
+              const SizedBox(height: 10),
+              const Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Expanded(
@@ -119,7 +119,7 @@ class LoginScreen extends StatelessWidget {
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.all(8.0),
+                    padding: EdgeInsets.all(8.0),
                     child: Text(
                       'OR',
                       style: TextStyle(),
@@ -132,12 +132,12 @@ class LoginScreen extends StatelessWidget {
                   )
                 ],
               ),
-              Text('Sign in with facebook'),
-              Divider(
+              const Text('Sign in with facebook'),
+              const Divider(
                 thickness: 1,
                 color: Colors.black38,
               ),
-              Text('Dont have an account? Sign up'),
+              const Text('Dont have an account? Sign up'),
             ],
           ),
         ),

@@ -3,7 +3,7 @@ import 'package:dotted_border/dotted_border.dart';
 
 class StoryWidget extends StatelessWidget {
   final String src, name;
-  StoryWidget({super.key, required this.src, required this.name});
+  const StoryWidget({super.key, required this.src, required this.name});
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -11,7 +11,7 @@ class StoryWidget extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               shape: BoxShape.circle,
               gradient: LinearGradient(
                   colors: [Colors.red, Colors.yellow],
@@ -28,7 +28,7 @@ class StoryWidget extends StatelessWidget {
           ),
           Text(
             name,
-            style: TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
+            style: const TextStyle(fontSize: 12, fontWeight: FontWeight.w500),
           )
         ],
       ),
